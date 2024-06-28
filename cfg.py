@@ -7,11 +7,11 @@ import shutil
 from ultralytics import YOLOv10
 
 config = {
-    "yaml_path": r"Safety_Helmet_Dataset\data.yaml",
-    "model_path" : r"weights\yolov10s.pt" , 
+    "yaml_path": r"Safety_Helmet_Dataset/data.yaml",
+    "model_path" : r"weights/yolov10s.pt" , 
     "epochs": 100,
     "img_size": 640,
-    "batch_size":128
+    "batch_size":16
 }
 
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu"); print(f"device: {device}")
