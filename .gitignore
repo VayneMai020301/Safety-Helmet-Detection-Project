@@ -1,0 +1,7 @@
+*.pyc
+yolov10/
+weights/
+Safety_Helmet_Dataset/
+runs/
+results/
+*.pt
